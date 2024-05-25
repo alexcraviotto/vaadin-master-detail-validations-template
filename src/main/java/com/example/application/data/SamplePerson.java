@@ -17,7 +17,7 @@ public class SamplePerson extends AbstractEntity {
     @Email
     @NotBlank(message = "Email cannot be blank")
     private String email;
-    @Pattern(regexp = "^\\+?\\(?[0-9]{1,4}\\)?\\s*[0-9]{10,15}$", message = "Invalid phone number")
+    @Pattern(regexp = "^\\+?\\(?[0-9]{1,4}\\)?[-\\s0-9]*$", message = "Invalid phone number")
     @NotBlank(message = "Phone cannot be blank")
     private String phone;
     @NotNull(message = "Date cannot be blank")
