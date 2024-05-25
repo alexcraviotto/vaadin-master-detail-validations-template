@@ -20,7 +20,7 @@ public class SamplePerson extends AbstractEntity {
     @Pattern(regexp = "^\\+?\\(?[0-9]{1,4}\\)?\\s*[0-9]{10,15}$", message = "Invalid phone number")
     @NotBlank(message = "Phone cannot be blank")
     private String phone;
-    @NotNull(message = "Phone cannot be blank")
+    @NotNull(message = "Date cannot be blank")
     private LocalDate dateOfBirth;
     @NotBlank(message = "Occupation cannot be blank")
     private String occupation;
